@@ -7,6 +7,8 @@ console.log(userMail.value);
 // declare variable (array).
 const mailList = ['user1@google.com', 'user2@apple.com', 'user3@microsoft.com', 'user4@boolean.com']
 
+let outputDom = document.getElementById('output');
+
 // click on button
 const buttonClick = document.getElementById('sentMail');
 buttonClick.addEventListener('click',
@@ -20,8 +22,12 @@ function() {
         if (userMail.value == mailList[i]) {
             alert('Access granted! Your profile page will load shortly.')
             i = mailList.length; // to stop the for loop.
+            outputDom.innerHTML = 'Access granted! Your profile page will load shortly.';
         } else if (i == (mailList.length-1)) { // only after we have cycled through all the for loop, it is the moment to show the error message.
             alert('Access not allowed! Please, type a valid email address.');
+            outputDom.innerHTML = 'Access not allowed! Please, type a valid email address.';
         }
     }
 })
+
+// show result on page
