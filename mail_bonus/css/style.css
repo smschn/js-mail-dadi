@@ -12,3 +12,13 @@
     padding: 2rem;
     border: 1px dashed red;
 }
+
+.outputClass_1 {
+    color: #fff;
+    background-color: olivedrab;
+}
+
+.outputClass_2 {
+    color: #fff;
+    background-color: cornflowerblue;
+}
