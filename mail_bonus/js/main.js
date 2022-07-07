@@ -32,5 +32,3 @@ function() {
         }
     }
 })
-
-// show result on page
