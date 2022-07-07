@@ -7,6 +7,7 @@ console.log(userMail.value);
 // declare variable (array).
 const mailList = ['user1@google.com', 'user2@apple.com', 'user3@microsoft.com', 'user4@boolean.com']
 
+// variable to show the for loop result on html page
 let outputDom = document.getElementById('output');
 
 // click on button
@@ -20,12 +21,12 @@ function() {
     // for loop to cycle through the array to check if the mail address is inside the array.
     for (i=0; i<mailList.length; i++) {
         if (userMail.value == mailList[i]) {
-            alert('Access granted! Your profile page will load shortly.')
+            // alert('Access granted! Your profile page will load shortly.')
             i = mailList.length; // to stop the for loop.
-            outputDom.innerHTML = 'Access granted! Your profile page will load shortly.';
+            outputDom.innerHTML = 'Access granted! Your profile page will load shortly.'; // to show the result on html page.
         } else if (i == (mailList.length-1)) { // only after we have cycled through all the for loop, it is the moment to show the error message.
-            alert('Access not allowed! Please, type a valid email address.');
-            outputDom.innerHTML = 'Access not allowed! Please, type a valid email address.';
+            // alert('Access not allowed! Please, type a valid email address.');
+            outputDom.innerHTML = 'Access not allowed! Please, type a valid email address.'; // to show the result on html page.
         }
     }
 })
