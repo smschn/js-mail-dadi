@@ -1,18 +1,18 @@
-// user input taken from input.
+// user mail taken from input.
 const userMail = document.getElementById('mail');
 
-//debug - user has not typed yet: <input> is empty with no value.
+// debug - user has not typed yet: now <input> is empty with no value.
 console.log(userMail.value);
 
 // declare variable (array).
 const mailList = ['user1@google.com', 'user2@apple.com', 'user3@microsoft.com', 'user4@boolean.com']
 
-// click
+// click on button
 const buttonClick = document.getElementById('sentMail');
 buttonClick.addEventListener('click',
 function() {
 
-    //debug - user has typed the mail: <input> value is now the mail address. I can use the .value in the for loop.
+    // debug - user has typed the mail and clicking the button made the <input> .value visible to javascript (now <input> .value is the mail address). I can use the .value in the for loop.
     console.log(userMail.value);
 
     // for loop to cycle through the array to check if the mail address is inside the array.
